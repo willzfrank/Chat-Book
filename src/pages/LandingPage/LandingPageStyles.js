@@ -77,14 +77,15 @@ export const HeaderContainer = styled.header`
     }
   }
   h1 {
-    font-size: 54px;
+    font-size: 48.4px;
     text-align: center;
-    line-height: 75px;
-    letter-spacing: 1px;
+    line-height: 1.3;
+    letter-spacing: -1.6px;
     color: #2a1d6a;
     font-weight: 800;
+    font-family: 'Asul', sans-serif;
     @media (max-width: 425px) {
-      font-size: 40px;
+      font-size: 36px;
       text-align: center;
       line-height: 50px;
       padding: 0 20px;
@@ -94,10 +95,14 @@ export const HeaderContainer = styled.header`
   .header--text {
     font-size: 20px;
     margin: 5px 0;
+    line-height: 1.7;
+    letter-spacing: 0.4px;
     color: var(--black);
     text-align: center;
+    font-family: Inter;
 
     @media (max-width: 425px) {
+      margin: 2rem 0;
       font-size: 16px;
       word-wrap: break-word;
       text-align: center;
@@ -173,25 +178,33 @@ export const ServiceContainer = styled.section`
   justify-content: center;
   background: var(--white);
   margin-bottom: 50px;
-  padding-bottom: 50px;
-  padding: 0 1rem;
+  padding: 0 1rem 50px  1rem;
   transition: 0.3s ease-in-out;
   @media (max-width: 768px) {
-    padding: 5rem 0;
+    padding: 50px 15px;
+    margin-top:50px;
+    
   }
 
   h2 {
-    width: 45%;
+    font-family: Inter;
+    font-size:36px;
     text-align: center;
+    letter-spacing:0.2px;
+    line-height:1.5;
+    margin:16px 0 18px;
+    transition: all 1s ease 0s;
     @media (max-width: 768px) {
       width: 100%;
       margin-top: 1rem;
+      font-size:29px;
     }
   }
 
   .service--box {
     border: none;
-    width: 70vw;
+    /* width: 70vw;
+    border:2px solid red; */
     border-radius: 10px;
     padding: 30px;
     display: flex;
@@ -210,13 +223,24 @@ export const ServiceContainer = styled.section`
 
     h4 {
       color: (--main);
-      font-size: 20px;
+      font-size: 16px;
+      letter-spacing:2px;
+      text-transform:uppercase;
+      font-family:inter;
+      transition:all 1s ease 0s;
+      
+
+      @media (max-width: 768px) {
+     font-size: 14px;
+     
+    }
     }
 
-    h2 {
+    /* h2 {
       color: (--black);
       font-size: 25px;
-    }
+      border:2px solid red;
+    } */
   }
 
   .service--content {
@@ -238,16 +262,33 @@ export const ServiceContainer = styled.section`
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    padding: 10px;
-    gap: 6px;
-    border: 2px solid var(--main);
-    border-radius: 8px;
+    padding: 50px 30px;
+    margin:50px 0;
+    /* gap: 6px; */
+    border: 1px solid var(--main);
+    border-radius: 16px;
     box-shadow: 5px 5px 16px -3px #2a1d6a;
+    transition: all 1s ease 0s;
+    width:100% ;
 
     @media (max-width: 768px) {
       text-align:left;
       align-items:flex-start;
-      padding:30px;
+      /* padding:30px; */
+    }
+
+    h3{
+      font-size: 24px;
+    font-family: 'Asul', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    margin: 30px 0px 8px;
+    }
+
+    p{
+      line-height: 1.8;
+      transition: all 1s ease 0s;
+      font-family: Inter;
     }
     
 
