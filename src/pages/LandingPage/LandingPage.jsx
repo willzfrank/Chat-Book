@@ -11,6 +11,8 @@ import {
 } from './LandingPageStyles.js';
 import image1 from '../../assets/heart.png';
 import image2 from '../../assets/like.png';
+import appStore from '../../assets/appstore.svg';
+import playStore from '../../assets/playstore.svg';
 import image3 from '../../assets/istockphoto-480613419-612x612.jpg';
 import image4 from '../../assets/gift.png';
 import image5 from '../../assets/36600502-thank-you-speech-bubble-drawing.jpg';
@@ -172,15 +174,37 @@ const LandingPage = () => {
       </PricingContainer>
       <FAQContainer>
         <h1>Frequently Asked Questions</h1>
-        <div>ANIMATION</div>
-        <div>
+        <div className="faq--circle">
+          {' '}
+          <svg
+            class="abs-balls balls"
+            width="107"
+            height="146"
+            viewBox="0 0 107 146"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g class="ball">
+              <circle cx="72" cy="111" r="35" fill="#2a1d6a"></circle>
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M55.1021 141.658C64.9327 138.292 72.0001 128.971 72.0001 118C72.0001 104.193 60.8072 93 47.0001 93C45.1597 93 43.3657 93.1989 41.6385 93.5763C41.4144 93.9659 41.1976 94.3603 40.9883 94.7592C42.9096 94.2636 44.9241 94 47.0001 94C60.2549 94 71.0001 104.745 71.0001 118C71.0001 128.844 63.8083 138.008 53.9342 140.983C54.3187 141.215 54.7081 141.44 55.1021 141.658Z"
+                fill="white"
+              ></path>
+            </g>
+            <circle class="ball" cx="17" cy="55" r="17" fill="#2a1d6a"></circle>
+            <circle class="ball" cx="41" cy="7" r="7" fill="#2a1d6a"></circle>
+            <circle class="ball" cx="41" cy="7" r="7" fill="#2a1d6a"></circle>
+          </svg>
+        </div>
+        <div className="faq--box">
           <FaqBox>
             <h2>How much does it cost?</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
             </p>
           </FaqBox>
-          <hr />
           <FaqBox>
             <h2>Is it available in my region?</h2>
             <p>
@@ -189,7 +213,6 @@ const LandingPage = () => {
               iure
             </p>
           </FaqBox>
-          <hr />
           <FaqBox>
             <h2>Will i get my money back?</h2>
             <p>
@@ -197,12 +220,10 @@ const LandingPage = () => {
               ipsa nihil! Laborum incidunt assumenda rerum! Quia magnam atque
             </p>
           </FaqBox>
-          <hr />
           <FaqBox>
             <h2>How much does it cost?</h2>
             <p> voluptatum nobis.</p>
           </FaqBox>
-          <hr />
           <FaqBox>
             <h2>How much does it cost?</h2>
             <p>
@@ -215,29 +236,20 @@ const LandingPage = () => {
         </div>
       </FAQContainer>
       <StoreContainer>
-        <h2>Get the Hideas Mobile App</h2>
-        <p className="store--subtitle">
-          Placing this text here to occupy space so it would not be placed as
-          blank.
-        </p>
+        <div className="store--box--header">
+          <h2>Get the Hideas Mobile App</h2>
+          <p className="store--subtitle tb-slid-up slide-up">
+            Placing this text here to occupy space so it would not be placed as
+            blank.
+          </p>
+        </div>
+
         <div className="download--container">
           <div className="store--box">
-            image
-            <div>
-              <p>Download on the </p>
-              <p>
-                <b>App Store</b>
-              </p>
-            </div>
+            <img src={appStore} alt="" />
           </div>
           <div className="store--box">
-            image
-            <div>
-              <p>Get it on </p>
-              <p>
-                <b>Play Store</b>
-              </p>
-            </div>
+            <img src={playStore} alt="" />
           </div>
         </div>
       </StoreContainer>

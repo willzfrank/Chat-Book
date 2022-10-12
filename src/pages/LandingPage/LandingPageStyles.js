@@ -92,9 +92,9 @@ export const HeaderContainer = styled.header`
     }
   }
 
-  span {
+  /* span {
     font-family: 'Asul', sans-serif;
-  }
+  } */
 
   .header--text {
     font-size: 20px;
@@ -309,7 +309,9 @@ export const PricingContainer = styled.section`
   align-items: center;
   justify-content: center;
   background: #f7fbfe;
+
   padding-bottom: 50px;
+  font-family: 'Inter';
   margin-bottom: 50px;
   transition: 0.3s ease-in-out;
   @media (max-width: 768px) {
@@ -430,34 +432,123 @@ export const PricingContainer = styled.section`
 `;
 
 export const FAQContainer = styled.section`
-  padding: 0 1rem;
+  padding-top: 100px;
+  padding-bottom: 120px;
+  padding: 100px 20px 120px 20px;
+  position: relative;
+
+  .abs-balls {
+    position: absolute;
+    top: 130px;
+    right: 255px;
+  }
+  @media (max-width: 900px) {
+    .abs-balls {
+      top: 164px;
+      right: 0px;
+    }
+  }
 
   h1 {
+    max-width: 510px;
+    margin-bottom: 80px;
     font-size: 30px;
     color: var(--main);
+    font-family: 'Asul', sans-serif;
+    transition: 1s ease;
+    font-size: 48.4px;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    line-height: 1.3;
+    letter-spacing: -1.6px;
+    font-weight: bold;
+    @media (max-width: 768px) {
+      font-size: 36px;
+    }
   }
 `;
 
 export const FaqBox = styled.div`
-  padding: 2rem 0;
+  padding: 40px 0;
+  border-bottom: 0.5px solid #2a1d6a;
+  transition: 1s ease;
+
+  h2 {
+    font-family: 'Asul', sans-serif;
+    font-weight: bold;
+    line-height: 1.7;
+    letter-spacing: -0.4px;
+    font-size: 150%;
+    margin-bottom: 15px;
+  }
+
+  p {
+    padding-right: 40px;
+    transition: 1s ease;
+    letter-spacing: -0.4px;
+    font-size: 16px;
+    font-family: 'Inter';
+    line-height: 1.7;
+
+    @media (max-width: 768px) {
+      padding-right: 0px;
+    }
+  }
 `;
 
 export const StoreContainer = styled.div`
   background: var(--main);
   color: var(--white);
-  margin: 5rem 1rem;
-  padding: 2rem 0.5rem;
-  border-radius: 5px;
+  margin: 140px 0;
+  padding: 0 115px;
+  border-radius: 4px;
+  min-height: 380px;
+  box-shadow: 0 50px 40px -30px #2a1d6a;
+
+  @media (max-width: 768px) {
+    max-width: 543px;
+    padding: 0 20px;
+  }
+
+  .store--box--header {
+    padding: 60px 80px;
+
+    @media (max-width: 768px) {
+      max-width: 395px;
+      padding: 40px 20px;
+    }
+  }
 
   h2 {
     color: var(--white);
-    width: 80%;
-    font-size: 30px;
-    padding: 0 1rem;
+    /* width: 80%; */
+
+    font-weight: bold;
+    line-height: 1.3;
+    letter-spacing: -1.6px;
+    font-size: 48.4px;
+
+    @media (max-width: 768px) {
+      letter-spacing: 0;
+      font-size: 250%;
+      font-family: 'Asul', sans-serif;
+      transition: 1s ease;
+      font-size: 36px;
+    }
   }
 
   .store--subtitle {
-    padding: 0 1rem;
+    font-size: 105%;
+    margin: 24px 0 30px 0;
+    letter-spacing: -0.4px;
+    font-family: 'Inter';
+    line-height: 1.7;
+
+    @media (max-width: 768px) {
+      max-width: 90%;
+    }
   }
 
   .download--container {
@@ -469,8 +560,6 @@ export const StoreContainer = styled.div`
       display: flex;
       justify-content: space-around;
       align-items: center;
-      gap: 1rem;
-      padding: 2px 5px;
       border-radius: 5px;
       background: var(--white);
       color: var(--main);

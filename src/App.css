@@ -18,6 +18,21 @@
   display: none;
 }
 
+/* ANIMATION */
+.tb-slid-up {
+  opacity: 0;
+  -webkit-transform: translate(0, 70px);
+  transform: translate(0, 70px);
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.tb-slid-up.slide-up {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
 .App {
   overflow: hidden;
   color: var(--black);
