@@ -1,0 +1,37 @@
+.profilecard--container {
+}
+
+.card--list--container {
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+h2 {
+  margin-bottom: 30px;
+}
+
+.card--list--box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
+.card--list-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .card--list--container {
+    margin-bottom: 2px;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  .card--list--box {
+    gap: 7px;
+  }
+}

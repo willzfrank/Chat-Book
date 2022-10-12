@@ -1,0 +1,36 @@
+.Home_container {
+  display: flex;
+  width: 100%;
+}
+.Home_top_center {
+  flex: 5.5;
+  padding: 20px;
+}
+
+.Home_top_left {
+  flex: 3.5;
+}
+
+.Home_top_right {
+  flex: 3;
+  height: calc(100vh - 50px);
+  position: sticky;
+  top: 50px;
+  overflow-y: scroll;
+  /* navbar is 50px */
+}
+
+@media (max-width: 768px) {
+  .Home_top_right {
+    display: none;
+    flex: 0;
+  }
+  .Home_top_left {
+    display: none;
+    flex: 0;
+  }
+  .Home_top_center {
+    flex: 1;
+    width: 100%;
+  }
+}

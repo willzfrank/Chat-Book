@@ -1,0 +1,57 @@
+.form--information {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.login--input {
+  border-radius: 8px;
+  border: none;
+  background: rgb(236, 235, 235);
+  font-size: 18px;
+  padding: 20px;
+  margin: 5px 0;
+  outline: none;
+  width: 100%;
+}
+
+.image--container {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.image--box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.image--box input {
+  cursor: pointer;
+}
+
+.update--btn {
+  display: flex;
+  align-self: flex-end;
+  padding: 12px;
+}
+
+@media (max-width: 600px) {
+  .modal--box {
+    width: 100% !important;
+  }
+
+  .image--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    gap: 1rem;
+    flex-direction: column;
+  }
+
+  .image--box input {
+    font-size: 16px;
+  }
+}

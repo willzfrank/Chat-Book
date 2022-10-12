@@ -1,0 +1,142 @@
+.profile--cover--img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.profile--image--container {
+  position: relative;
+}
+
+.profile--profile--container {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: -15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.profile--profile--img {
+  border-radius: 50%;
+  width: 150px;
+  object-fit: cover;
+  height: 150px;
+  border: 3px solid white;
+}
+
+.profile--center--box {
+  margin-top: 300px;
+  display: flex;
+}
+
+.profile--left {
+  flex: 3;
+  padding: 20px 10px;
+}
+
+.profile--right {
+  flex: 2;
+  padding: 20px 10px;
+}
+
+.profile--profile--name {
+  font-style: 24px;
+}
+
+.profile--profile--desc {
+  font-weight: 300;
+}
+
+.followerStatus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.followerStatus > hr {
+  width: 85%;
+  border: 1px solid var(--main);
+}
+
+.followerStatus > div {
+  display: flex;
+  gap: 1rem;
+  width: 80%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.follow {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.follow > p:nth-of-type(1) {
+  font-weight: bold;
+}
+
+.follow > p:nth-of-type(1) {
+  color: var(--black);
+}
+
+.vl {
+  border: 2px solid var(--main);
+
+  width: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .profile--cover--img {
+    object-fit: contain;
+    height: 100%;
+  }
+
+  .profile--profile--img {
+    width: 100px;
+    object-fit: cover;
+    height: 100px;
+    border: 3px solid var(--main);
+  }
+
+  .profile--profile--container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -11.5rem;
+    gap: 7px;
+  }
+
+  .profile--center--box {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .profile--right {
+    padding: 0px 10px;
+  }
+
+  .followerStatus {
+    gap: 1rem;
+    width: 100vw;
+  }
+
+  .vl {
+    border: 1px solid var(--main);
+    height: 50px;
+    width: 0rem;
+  }
+}

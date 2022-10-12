@@ -1,0 +1,23 @@
+.Profile_top_center {
+  flex: 9;
+}
+
+.Profile_top_right {
+  flex: 3;
+  position: sticky;
+  top: 50px;
+  overflow-y: scroll;
+  height: calc(100vh - 50px);
+}
+
+@media (max-width: 600px) {
+  .Profile_top_right {
+    display: none;
+    flex: 0;
+  }
+
+  .Profile_top_center {
+    flex: 1;
+    width: 100%;
+  }
+}

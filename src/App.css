@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #242d49;
+  --white: #f7fbfe;
+  --main: #2a1d6a;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.App {
+  overflow: hidden;
+  color: var(--black);
+  padding: 1rem;
+}
+/* 
+.blur {
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background: #2a1d6a;
+  filter: blur(160px);
+  border: 2px solid red;
+  z-index: 20;
+}
+
+.top {
+  top: -18%;
+  right: 0;
+}
+
+.bottom {
+  top: 55%;
+  left: -8rem;
+} */
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  color: white;
+  border-radius: 0.5rem;
+  background: var(--main);
+  transition: all 100ms ease-out;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: transparent;
+  color: var(--main);
+  border: 2px solid var(--main);
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .App {
+    padding: 0;
+  }
+}

@@ -1,0 +1,97 @@
+.post--container {
+  -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+  box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+  margin: 30px 0px;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.post--profile--container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.post--img--container {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.feed--profile {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile--name {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.profile--date {
+  font-size: 12px;
+}
+
+.post--date--container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+}
+
+.postCenter {
+  margin: 20px 0;
+}
+
+.postImg {
+  margin-top: 20px;
+  width: 100%;
+  max-height: 20rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.postBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.postBottomLeft {
+  display: flex;
+  align-items: center;
+}
+
+.feed--profile {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.postLikeCounter,
+.postCommentText {
+  font-size: 12px;
+  color: grey;
+}
+
+.postCommentText {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .post--container {
+    margin: 10px 0px;
+  }
+
+  .profile--name {
+    font-weight: bold;
+  }
+
+  .post--date--container {
+    justify-content: flex-start;
+    gap: 6px;
+    width: 100%;
+  }
+}

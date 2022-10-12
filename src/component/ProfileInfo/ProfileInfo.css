@@ -1,0 +1,46 @@
+.user--details {
+  margin-bottom: 10px;
+}
+
+.user--details span {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.edit--container--content > span {
+  font-weight: bold;
+}
+.edit--container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit--container > svg {
+  cursor: pointer;
+  height: 1.2rem;
+  width: 2rem;
+}
+
+.profileinfo--container {
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 90%;
+  background: #f7fbfe;
+  margin-bottom: 2rem;
+}
+
+.logout--btn {
+  width: 7rem;
+  height: 2rem;
+  margin-top: 6rem;
+}
+
+@media (max-width: 768px) {
+  .user--details {
+    margin-bottom: 10px;
+  }
+
+  .profileinfo--container {
+    width: 100%;
+  }
+}
