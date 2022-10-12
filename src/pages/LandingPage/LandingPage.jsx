@@ -32,7 +32,12 @@ const LandingPage = () => {
         <div className="header--content" id="top">
           <h1>
             Stay Cool !
-            <span style={{ color: 'var(--black)' }}>
+            <span
+              style={{
+                color: 'var(--black)',
+                fontFamily: 'Monsieur La Douloise',
+              }}
+            >
               <br /> with
             </span>
             <span>

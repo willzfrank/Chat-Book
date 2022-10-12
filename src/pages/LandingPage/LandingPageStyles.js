@@ -92,6 +92,10 @@ export const HeaderContainer = styled.header`
     }
   }
 
+  span {
+    font-family: 'Asul', sans-serif;
+  }
+
   .header--text {
     font-size: 20px;
     margin: 5px 0;
