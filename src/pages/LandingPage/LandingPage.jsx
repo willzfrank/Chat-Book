@@ -47,7 +47,7 @@ const LandingPage = () => {
             </span>
           </h1>
           <p className="header--text">
-            Hideas offers anyone willing to get aquainted and communicate with
+            Hideas offers anyone willing to get acquainted and communicate with
             family and friends easily. Start with Hideas, our fully-loaded
             social-chat which you can install for free and use without limits.
           </p>
@@ -254,33 +254,14 @@ const LandingPage = () => {
         </div>
       </StoreContainer>
       <FooterContainer>
-        <div>
-          <h3>HIIDEAS</h3>
-          <ul>
-            <li>Features</li>
-            <li>Download</li>
-            <li>Business</li>
-            <li>Privacy</li>
-          </ul>
-        </div>
+        <h3>HIIDEAS</h3>
 
-        <div>
-          <h3>COMPANY</h3>
-          <ul>
-            <li>About</li>
-            <li>Get in touch</li>
-            <li>Blog</li>
-          </ul>
-        </div>
+        <p>About</p>
+        <p>Get in touch</p>
+        <p>Business</p>
+        <p>Features</p>
+        <p>Privacy</p>
 
-        <div>
-          <h3>DOWNLOAD</h3>
-          <ul>
-            <li>Mac/PC</li>
-            <li>Android</li>
-            <li>iPhone</li>
-          </ul>
-        </div>
         <a href="#top" className="animate-bounce go-to-top active">
           <RocketLaunchIcon />
         </a>

@@ -309,8 +309,7 @@ export const PricingContainer = styled.section`
   align-items: center;
   justify-content: center;
   background: #f7fbfe;
-
-  padding-bottom: 50px;
+  padding: 100px 20px 120px 20px;
   font-family: 'Inter';
   margin-bottom: 50px;
   transition: 0.3s ease-in-out;
@@ -334,11 +333,26 @@ export const PricingContainer = styled.section`
 
     p {
       width: 50%;
+      padding-top: 16px;
+      font-size: 18px;
+      line-height: 1.67;
       text-align: center;
 
       @media (max-width: 768px) {
         width: 100%;
         padding: 0 1rem;
+      }
+    }
+
+    h2 {
+      letter-spacing: 0.01em;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 1.2;
+
+      @media (max-width: 768px) {
+        font-size: 32px;
+        line-height: 1.5;
       }
     }
   }
@@ -356,12 +370,13 @@ export const PricingContainer = styled.section`
 
     .pricing--content--box {
       border: none;
-      height: 380px;
+      height: max-content;
       box-shadow: 5px 5px 16px -3px #2a1d6a;
-      padding: 30px;
+      padding: 45px 36px 63px;
       border-radius: 8px;
       position: relative;
       transition: 0.3s;
+      max-width: 320px;
       @media (max-width: 768px) {
         height: 400px;
         padding: 40px 30px;
@@ -377,20 +392,29 @@ export const PricingContainer = styled.section`
 
         p {
           position: absolute;
-          top: -25px;
-          right: -30px;
-          padding: 2px 4px;
+          width: calc(max-content + 2px);
+          top: -30px;
+          right: -37px;
+          padding: 1px 3px;
           border: none;
           color: white;
           background: #2a1d6a;
+          font-size: 12px;
         }
       }
       ul {
         list-style: none;
         margin: 20px 0;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
 
         li {
-          margin-bottom: 10px;
+          margin-bottom: 15px;
+          font-size: 16px;
+          font-family: inter;
         }
       }
 
@@ -417,13 +441,18 @@ export const PricingContainer = styled.section`
 
         .amount--container {
           display: flex;
-          font-size: 25px;
           align-items: center;
           justify-content: center;
+          font-size: 36px;
+          font-weight: 600;
+          width: 100%;
+          padding: 1rem 0;
+          border-bottom: 0.5px solid #2a1d6a;
+          border-top: 0.5px solid #2a1d6a;
 
           .amount {
             color: #2a1d6a;
-            font-size: 50px;
+            /* font-size: 50px; */
           }
         }
       }
@@ -432,8 +461,6 @@ export const PricingContainer = styled.section`
 `;
 
 export const FAQContainer = styled.section`
-  padding-top: 100px;
-  padding-bottom: 120px;
   padding: 100px 20px 120px 20px;
   position: relative;
 
@@ -570,29 +597,33 @@ export const StoreContainer = styled.div`
 
 export const FooterContainer = styled.footer`
   display: flex;
-  padding: 100px 30px;
+  padding: 20px 20px;
   justify-content: space-around;
-  flex-wrap: wrap;
+  align-items: center;
   background: #f7fbfe;
+  border-radius: 8px;
   transition: 0.3s ease-in-out;
   @media (max-width: 768px) {
     padding: 50px 15px;
-    margin: 0 auto;
     flex-direction: column;
-    gap: 15px;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
   h3 {
     color: #2a1d6a;
-    margin-bottom: 10px;
+    font-size: 30px;
+    font-family: Monsieur La Doulaise;
   }
 
-  ul {
-    list-style: none;
+  p {
+    cursor: pointer;
+    font-size: 18px;
+    font-family: inter;
 
-    li {
-      margin-bottom: 15px;
-      cursor: pointer;
+    cursor: pointer;
+    @media (max-width: 768px) {
+      margin: 18px 0;
     }
   }
 

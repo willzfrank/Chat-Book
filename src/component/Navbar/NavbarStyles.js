@@ -70,12 +70,16 @@ export const NavbarListContainer = styled.div`
     cursor: pointer;
 
     li {
-      font-size: 16px;
-      font-weight: 600;
-      line-height: 24px;
-      letter-spacing: 0.5px;
+      font-weight: bold;
+      line-height: 1.7;
+      letter-spacing: -0.4px;
       text-align: center;
       z-index: 30;
+      margin: 20px 0;
+      font-size: 100%;
+      font-weight: 500;
+      font-family: inter;
+      transition: 0.2s ease;
 
       .sign--btn {
         color: var(--main);
