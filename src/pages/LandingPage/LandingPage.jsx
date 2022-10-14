@@ -20,17 +20,39 @@ import { Link } from 'react-router-dom';
 import ChevronRightSharpIcon from '@mui/icons-material/ChevronRightSharp';
 import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
 import Navbar from '../../component/Navbar/Navbar.jsx';
+import Fade from 'react-reveal/Fade';
+import Pulse from 'react-reveal/Pulse';
 
 const LandingPage = () => {
   return (
     <LandingPageContainer>
       <Navbar />
       <HeaderContainer>
-        <img src={image1} alt="" className="image1" />
-        <img src={image5} alt="" className="image2" />
-        <img src={image3} alt="" className="image3" />
-        <img src={image4} alt="" className="image4" />
-        <img src={image2} alt="" className="image5" />
+        <img
+          src={image1}
+          alt=""
+          className="image1 animate__animated animate__pulse animate__infinite"
+        />
+        <img
+          src={image5}
+          alt=""
+          className="image2 animate__animated animate__pulse animate__infinite"
+        />
+        <img
+          src={image3}
+          alt=""
+          className="image3 animate__animated animate__pulse animate__infinite"
+        />
+        <img
+          src={image4}
+          alt=""
+          className="image4 animate__animated animate__pulse animate__infinite"
+        />
+        <img
+          src={image2}
+          alt=""
+          className="image5 animate__animated animate__pulse animate__infinite"
+        />
         <div className="header--content" id="top">
           <h1>
             Stay Cool !
@@ -67,117 +89,143 @@ const LandingPage = () => {
       </HeaderContainer>
       <ServiceContainer>
         <div className="service--box">
-          <h4>
-            Why Use <span style={{ color: 'var(--main)' }}>Hideas?</span>
-          </h4>
-          <h2> A delightful experience for you and your social life</h2>
+          <Fade bottom>
+            <h4>
+              Why Use <span style={{ color: 'var(--main)' }}>Hideas?</span>
+            </h4>
+          </Fade>
+          <Fade bottom>
+            <h2> A delightful experience for you and your social life</h2>
+          </Fade>
+
           <div className="service--content">
-            <div className="service--text">
-              <div className="service--logo">logo</div>
-              <h3>Customer support</h3>
-              <p>
-                Hiideas offer premium customer support for every user 24/7 and
-                free resources needed and please note that this is just a fake
-                site business for training purposes and just typing to fill up
-                this space here.
-              </p>
-            </div>
+            <Pulse>
+              <div className="service--text">
+                <div className="service--logo">logo</div>
+                <h3>Customer support</h3>
+                <p>
+                  Hiideas offer premium customer support for every user 24/7 and
+                  free resources needed and please note that this is just a fake
+                  site business for training purposes and just typing to fill up
+                  this space here.
+                </p>
+              </div>
+            </Pulse>
 
-            <div className="service--text">
-              <div className="service--logo">logo</div>
-              <h3>Powerful Tools</h3>
-              <p>
-                Hiideas offer premium powerful tools for every user 24/7 and
-                free resources needed and please note that this is just a fake
-                site business for training purposes and just typing to fill up
-                this space here.
-              </p>
-            </div>
+            <Pulse>
+              <div className="service--text">
+                <div className="service--logo">logo</div>
+                <h3>Powerful Tools</h3>
+                <p>
+                  Hiideas offer premium powerful tools for every user 24/7 and
+                  free resources needed and please note that this is just a fake
+                  site business for training purposes and just typing to fill up
+                  this space here.
+                </p>
+              </div>
+            </Pulse>
 
-            <div className="service--text">
-              <div className="service--logo">logo</div>
-              <h3>Enterprise-ready</h3>
-              <p>
-                Hiideas offer premium Enterprise-ready feature for every user
-                24/7 and free resources needed and please note that this is just
-                a fake site business for training purposes and just typing to
-                fill up this space here.
-              </p>
-            </div>
+            <Pulse>
+              <div className="service--text">
+                <div className="service--logo">logo</div>
+                <h3>Enterprise-ready</h3>
+                <p>
+                  Hiideas offer premium Enterprise-ready feature for every user
+                  24/7 and free resources needed and please note that this is
+                  just a fake site business for training purposes and just
+                  typing to fill up this space here.
+                </p>
+              </div>
+            </Pulse>
           </div>
         </div>
       </ServiceContainer>
       <PricingContainer>
         <div className="pricing--box">
-          <h2>Our pricing</h2>
-          <p>
-            Our pricing varies from free, premium to business. Remember not to
-            fill in your bank details in this cause its actually a demo account.
-          </p>
+          <Fade bottom>
+            <h2>Our pricing</h2>
+          </Fade>
+          <Fade bottom>
+            <p>
+              Our pricing varies from free, premium to business. Remember not to
+              fill in your bank details in this cause its actually a demo
+              account.
+            </p>
+          </Fade>
+
           <div className="pricing--content">
-            <div className="pricing--content--box">
-              <div className="pricing--content--header">
-                <h4>Free</h4>
-                <span className="amount--container">
-                  $<span className="amount">0</span>
-                </span>
-              </div>
+            <Fade bottom>
+              <div className="pricing--content--box">
+                <div className="pricing--content--header">
+                  <h4>Free</h4>
+                  <span className="amount--container">
+                    $<span className="amount">0</span>
+                  </span>
+                </div>
 
-              <ul>
-                <li>Ads present</li>
-                <li>No Secured messaging</li>
-                <li>Messages saved for over 2 years</li>
-                <li>No access to Hideas products</li>
-                <li>slow access</li>
-              </ul>
-              <button>Choose plan</button>
-            </div>
+                <ul>
+                  <li>Ads present</li>
+                  <li>No Secured messaging</li>
+                  <li>Messages saved for over 2 years</li>
+                  <li>No access to Hideas products</li>
+                  <li>slow access</li>
+                </ul>
+                <button>Choose plan</button>
+              </div>
+            </Fade>
 
-            <div className="pricing--content--box">
-              <div className="pricing--content--recommend">
-                <p>Recommended</p>
+            <Fade bottom>
+              <div className="pricing--content--box">
+                <div className="pricing--content--recommend">
+                  <p>Recommended</p>
+                </div>
+                <div className="pricing--content--header">
+                  <h4>Premium</h4>
+                  <span className="amount--container">
+                    $<span className="amount">125</span>
+                  </span>
+                </div>
+                <ul>
+                  <li>No ads</li>
+                  <li>Secured messaging</li>
+                  <li>Messages saved for over 10 years</li>
+                  <li>access to Hideas products</li>
+                  <li>Quick access</li>
+                </ul>
+                <button>Choose plan</button>
               </div>
-              <div className="pricing--content--header">
-                <h4>Premium</h4>
-                <span className="amount--container">
-                  $<span className="amount">125</span>
-                </span>
-              </div>
-              <ul>
-                <li>No ads</li>
-                <li>Secured messaging</li>
-                <li>Messages saved for over 10 years</li>
-                <li>access to Hideas products</li>
-                <li>Quick access</li>
-              </ul>
-              <button>Choose plan</button>
-            </div>
+            </Fade>
 
-            <div className="pricing--content--box">
-              <div className="pricing--content--header">
-                <h4>Business</h4>
-                <span className="amount--container">
-                  $<span className="amount">350</span>
-                </span>
+            <Fade bottom>
+              <div className="pricing--content--box">
+                <div className="pricing--content--header">
+                  <h4>Business</h4>
+                  <span className="amount--container">
+                    $<span className="amount">350</span>
+                  </span>
+                </div>
+                <ul>
+                  <li>No ads</li>
+                  <li>Secured end-to-end messaging</li>
+                  <li>Messages saved for over 30 years</li>
+                  <li>access to Hideas products</li>
+                  <li>Better access</li>
+                </ul>
+                <button>Choose plan</button>
               </div>
-              <ul>
-                <li>No ads</li>
-                <li>Secured end-to-end messaging</li>
-                <li>Messages saved for over 30 years</li>
-                <li>access to Hideas products</li>
-                <li>Better access</li>
-              </ul>
-              <button>Choose plan</button>
-            </div>
+            </Fade>
           </div>
         </div>
       </PricingContainer>
       <FAQContainer>
-        <h1>Frequently Asked Questions</h1>
+        <Fade bottom>
+          <h1>Frequently Asked Questions</h1>
+        </Fade>
+
         <div className="faq--circle">
           {' '}
           <svg
-            class="abs-balls balls"
+            className="abs-balls balls animate__animated animate__pulse animate__infinite"
             width="107"
             height="146"
             viewBox="0 0 107 146"
@@ -198,58 +246,99 @@ const LandingPage = () => {
             <circle class="ball" cx="41" cy="7" r="7" fill="#2a1d6a"></circle>
           </svg>
         </div>
+
         <div className="faq--box">
-          <FaqBox>
-            <h2>How much does it cost?</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-            </p>
-          </FaqBox>
-          <FaqBox>
-            <h2>Is it available in my region?</h2>
-            <p>
-              {' '}
-              mollitia impedit non dolor, corrupti veritatis omnis, modi hic
-              iure
-            </p>
-          </FaqBox>
-          <FaqBox>
-            <h2>Will i get my money back?</h2>
-            <p>
-              {' '}
-              ipsa nihil! Laborum incidunt assumenda rerum! Quia magnam atque
-            </p>
-          </FaqBox>
-          <FaqBox>
-            <h2>How much does it cost?</h2>
-            <p> voluptatum nobis.</p>
-          </FaqBox>
-          <FaqBox>
-            <h2>How much does it cost?</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-              mollitia impedit non dolor, corrupti veritatis omnis, modi hic
-              iure ipsa nihil! Laborum incidunt assumenda rerum! Quia magnam
-              atque voluptatum nobis.
-            </p>
-          </FaqBox>
+          <Fade bottom>
+            <FaqBox>
+              <Fade bottom>
+                <h2>How much does it cost?</h2>
+              </Fade>
+              <Fade bottom>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tenetur
+                </p>
+              </Fade>
+            </FaqBox>
+          </Fade>
+          <Fade bottom>
+            <FaqBox>
+              <Fade bottom>
+                <h2>Is it available in my region?</h2>
+              </Fade>
+              <Fade bottom>
+                <p>
+                  {' '}
+                  mollitia impedit non dolor, corrupti veritatis omnis, modi hic
+                  iure
+                </p>
+              </Fade>
+            </FaqBox>
+          </Fade>
+          <Fade bottom>
+            <FaqBox>
+              <Fade bottom>
+                <h2>Will i get my money back?</h2>
+              </Fade>
+              <Fade bottom>
+                <p>
+                  {' '}
+                  ipsa nihil! Laborum incidunt assumenda rerum! Quia magnam
+                  atque
+                </p>
+              </Fade>
+            </FaqBox>
+          </Fade>
+          <Fade bottom>
+            <FaqBox>
+              <Fade bottom>
+                <h2>How much does it cost?</h2>
+              </Fade>
+              <Fade bottom>
+                <p> voluptatum nobis.</p>
+              </Fade>
+            </FaqBox>
+          </Fade>
+          <Fade bottom>
+            <FaqBox>
+              <Fade bottom>
+                <h2>How much does it cost?</h2>
+              </Fade>
+              <Fade bottom>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tenetur mollitia impedit non dolor, corrupti veritatis omnis,
+                  modi hic iure ipsa nihil! Laborum incidunt assumenda rerum!
+                  Quia magnam atque voluptatum nobis.
+                </p>
+              </Fade>
+            </FaqBox>
+          </Fade>
         </div>
       </FAQContainer>
       <StoreContainer>
         <div className="store--box--header">
-          <h2>Get the Hideas Mobile App</h2>
-          <p className="store--subtitle tb-slid-up slide-up">
-            Placing this text here to occupy space so it would not be placed as
-            blank.
-          </p>
+          <Fade bottom>
+            <h2>Get the Hideas Mobile App</h2>
+          </Fade>
+          <Fade bottom>
+            <p className="store--subtitle tb-slid-up slide-up">
+              Placing this text here to occupy space so it would not be placed
+              as blank.
+            </p>
+          </Fade>
         </div>
 
         <div className="download--container">
           <div className="store--box">
-            <img src={appStore} alt="" />
+            <Fade bottom>
+              <img src={appStore} alt="" />
+            </Fade>
           </div>
           <div className="store--box">
-            <img src={playStore} alt="" />
+            <Fade bottom>
+              <img src={playStore} alt="" />
+            </Fade>
           </div>
         </div>
       </StoreContainer>
@@ -262,7 +351,10 @@ const LandingPage = () => {
         <p>Features</p>
         <p>Privacy</p>
 
-        <a href="#top" className="animate-bounce go-to-top active">
+        <a
+          href="#top"
+          className="animate__animated animate__bounce animate__infinite go-to-top active"
+        >
           <RocketLaunchIcon />
         </a>
       </FooterContainer>
