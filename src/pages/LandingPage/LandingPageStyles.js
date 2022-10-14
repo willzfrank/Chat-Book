@@ -378,7 +378,7 @@ export const PricingContainer = styled.section`
       transition: 0.3s;
       max-width: 320px;
       @media (max-width: 768px) {
-        height: 400px;
+        height: calc(max-content + 20px);
         padding: 40px 30px;
       }
 

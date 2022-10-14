@@ -164,11 +164,22 @@ const LandingPage = () => {
                 </div>
 
                 <ul>
-                  <li>Ads present</li>
-                  <li>No Secured messaging</li>
-                  <li>Messages saved for over 2 years</li>
-                  <li>No access to Hideas products</li>
-                  <li>slow access</li>
+                  <Fade bottom>
+                    <li>Ads present</li>
+                  </Fade>
+                  <Fade bottom>
+                    <li>No Secured messaging</li>
+                  </Fade>
+
+                  <Fade bottom>
+                    <li>Messages saved for over 5 years</li>
+                  </Fade>
+                  <Fade bottom>
+                    <li>No Access to Hideas products</li>
+                  </Fade>
+                  <Fade bottom>
+                    <li>Slow access</li>
+                  </Fade>
                 </ul>
                 <button>Choose plan</button>
               </div>
@@ -186,11 +197,22 @@ const LandingPage = () => {
                   </span>
                 </div>
                 <ul>
-                  <li>No ads</li>
-                  <li>Secured messaging</li>
-                  <li>Messages saved for over 10 years</li>
-                  <li>access to Hideas products</li>
-                  <li>Quick access</li>
+                  <Fade bottom>
+                    <li>No ads</li>
+                  </Fade>
+                  <Fade bottom>
+                    <li>Secured messaging</li>
+                  </Fade>
+
+                  <Fade bottom>
+                    <li>Messages saved for over 10 years</li>
+                  </Fade>
+                  <Fade bottom>
+                    <li>Access to Hideas products</li>
+                  </Fade>
+                  <Fade bottom>
+                    <li>Quick access</li>
+                  </Fade>
                 </ul>
                 <button>Choose plan</button>
               </div>
@@ -205,11 +227,21 @@ const LandingPage = () => {
                   </span>
                 </div>
                 <ul>
-                  <li>No ads</li>
-                  <li>Secured end-to-end messaging</li>
-                  <li>Messages saved for over 30 years</li>
-                  <li>access to Hideas products</li>
-                  <li>Better access</li>
+                  <Fade bottom>
+                    <li>No ads</li>
+                  </Fade>
+                  <Fade bottom>
+                    <li>Secured end-to-end messaging</li>
+                  </Fade>
+                  <Fade bottom>
+                    <li>Messages saved for over 30 years</li>
+                  </Fade>
+                  <Fade bottom>
+                    <li>Access to Hideas products</li>
+                  </Fade>
+                  <Fade bottom>
+                    <li>Better access</li>
+                  </Fade>
                 </ul>
                 <button>Choose plan</button>
               </div>
@@ -330,16 +362,16 @@ const LandingPage = () => {
         </div>
 
         <div className="download--container">
-          <div className="store--box">
-            <Fade bottom>
+          <Fade bottom>
+            <div className="store--box">
               <img src={appStore} alt="" />
-            </Fade>
-          </div>
-          <div className="store--box">
-            <Fade bottom>
+            </div>
+          </Fade>
+          <Fade bottom>
+            <div className="store--box">
               <img src={playStore} alt="" />
-            </Fade>
-          </div>
+            </div>
+          </Fade>
         </div>
       </StoreContainer>
       <FooterContainer>
