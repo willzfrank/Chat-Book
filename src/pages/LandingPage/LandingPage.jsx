@@ -19,6 +19,10 @@ import image5 from '../../assets/36600502-thank-you-speech-bubble-drawing.jpg';
 import { Link } from 'react-router-dom';
 import ChevronRightSharpIcon from '@mui/icons-material/ChevronRightSharp';
 import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
+import SupportAgentIcon from '@mui/icons-material/SupportAgent';
+import HandymanIcon from '@mui/icons-material/Handyman';
+import DoneIcon from '@mui/icons-material/Done';
+import BusinessIcon from '@mui/icons-material/Business';
 import Navbar from '../../component/Navbar/Navbar.jsx';
 import Fade from 'react-reveal/Fade';
 import Pulse from 'react-reveal/Pulse';
@@ -101,40 +105,64 @@ const LandingPage = () => {
           <div className="service--content">
             <Pulse>
               <div className="service--text">
-                <div className="service--logo">logo</div>
-                <h3>Customer support</h3>
-                <p>
-                  Hiideas offer premium customer support for every user 24/7 and
-                  free resources needed and please note that this is just a fake
-                  site business for training purposes and just typing to fill up
-                  this space here.
-                </p>
+                <Fade bottom>
+                  <div className="service--logo">
+                    <SupportAgentIcon className="icon" />
+                  </div>
+                </Fade>
+                <Fade bottom>
+                  <h3>Customer support</h3>
+                </Fade>
+                <Fade bottom>
+                  <p>
+                    Hiideas offer premium customer support for every user 24/7
+                    and free resources needed and please note that this is just
+                    a fake site business for training purposes and just typing
+                    to fill up this space here.
+                  </p>
+                </Fade>
               </div>
             </Pulse>
 
             <Pulse>
               <div className="service--text">
-                <div className="service--logo">logo</div>
-                <h3>Powerful Tools</h3>
-                <p>
-                  Hiideas offer premium powerful tools for every user 24/7 and
-                  free resources needed and please note that this is just a fake
-                  site business for training purposes and just typing to fill up
-                  this space here.
-                </p>
+                <Fade bottom>
+                  <div className="service--logo">
+                    <HandymanIcon className="icon" />
+                  </div>
+                </Fade>
+                <Fade bottom>
+                  <h3>Powerful Tools</h3>
+                </Fade>
+                <Fade bottom>
+                  <p>
+                    Hiideas offer premium powerful tools for every user 24/7 and
+                    free resources needed and please note that this is just a
+                    fake site business for training purposes and just typing to
+                    fill up this space here.
+                  </p>
+                </Fade>
               </div>
             </Pulse>
 
             <Pulse>
               <div className="service--text">
-                <div className="service--logo">logo</div>
-                <h3>Enterprise-ready</h3>
-                <p>
-                  Hiideas offer premium Enterprise-ready feature for every user
-                  24/7 and free resources needed and please note that this is
-                  just a fake site business for training purposes and just
-                  typing to fill up this space here.
-                </p>
+                <Fade bottom>
+                  <div className="service--logo">
+                    <BusinessIcon className="icon" />
+                  </div>
+                </Fade>
+                <Fade bottom>
+                  <h3>Enterprise-ready</h3>
+                </Fade>
+                <Fade bottom>
+                  <p>
+                    Hiideas offer premium Enterprise-ready feature for every
+                    user 24/7 and free resources needed and please note that
+                    this is just a fake site business for training purposes and
+                    just typing to fill up this space here.
+                  </p>
+                </Fade>
               </div>
             </Pulse>
           </div>
@@ -165,20 +193,35 @@ const LandingPage = () => {
 
                 <ul>
                   <Fade bottom>
-                    <li>Ads present</li>
+                    <li>
+                      <DoneIcon />
+                      Ads present
+                    </li>
                   </Fade>
                   <Fade bottom>
-                    <li>No Secured messaging</li>
+                    <li>
+                      <DoneIcon />
+                      No Secured messaging
+                    </li>
                   </Fade>
 
                   <Fade bottom>
-                    <li>Messages saved for over 5 years</li>
+                    <li>
+                      <DoneIcon />
+                      Messages saved for over 5 years
+                    </li>
                   </Fade>
                   <Fade bottom>
-                    <li>No Access to Hideas products</li>
+                    <li>
+                      <DoneIcon />
+                      No Access to Hideas products
+                    </li>
                   </Fade>
                   <Fade bottom>
-                    <li>Slow access</li>
+                    <li>
+                      <DoneIcon />
+                      Slow access
+                    </li>
                   </Fade>
                 </ul>
                 <button>Choose plan</button>
@@ -198,20 +241,35 @@ const LandingPage = () => {
                 </div>
                 <ul>
                   <Fade bottom>
-                    <li>No ads</li>
+                    <li>
+                      <DoneIcon />
+                      No ads
+                    </li>
                   </Fade>
                   <Fade bottom>
-                    <li>Secured messaging</li>
+                    <li>
+                      <DoneIcon />
+                      Secured messaging
+                    </li>
                   </Fade>
 
                   <Fade bottom>
-                    <li>Messages saved for over 10 years</li>
+                    <li>
+                      <DoneIcon />
+                      Messages saved for over 10 years
+                    </li>
                   </Fade>
                   <Fade bottom>
-                    <li>Access to Hideas products</li>
+                    <li>
+                      <DoneIcon />
+                      Access to Hideas products
+                    </li>
                   </Fade>
                   <Fade bottom>
-                    <li>Quick access</li>
+                    <li>
+                      <DoneIcon />
+                      Quick access
+                    </li>
                   </Fade>
                 </ul>
                 <button>Choose plan</button>
@@ -228,19 +286,34 @@ const LandingPage = () => {
                 </div>
                 <ul>
                   <Fade bottom>
-                    <li>No ads</li>
+                    <li>
+                      <DoneIcon />
+                      No ads
+                    </li>
                   </Fade>
                   <Fade bottom>
-                    <li>Secured end-to-end messaging</li>
+                    <li>
+                      <DoneIcon />
+                      Secured end-to-end messaging
+                    </li>
                   </Fade>
                   <Fade bottom>
-                    <li>Messages saved for over 30 years</li>
+                    <li>
+                      <DoneIcon />
+                      Messages saved for over 30 years
+                    </li>
                   </Fade>
                   <Fade bottom>
-                    <li>Access to Hideas products</li>
+                    <li>
+                      <DoneIcon />
+                      Access to Hideas products
+                    </li>
                   </Fade>
                   <Fade bottom>
-                    <li>Better access</li>
+                    <li>
+                      <DoneIcon />
+                      Better access
+                    </li>
                   </Fade>
                 </ul>
                 <button>Choose plan</button>

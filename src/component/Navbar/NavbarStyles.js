@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const NavbarContainer = styled.nav`
-  padding: 1rem;
+  padding: 0rem 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,6 +9,12 @@ export const NavbarContainer = styled.nav`
   /* border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px; */
   transition: 0.3s ease-in-out;
+  position: fixed;
+  z-index: 40;
+  width: 100%;
+  /* border-bottom: 2px solid var(--main); */
+  /* border-radius: 8px; */
+  top: 0;
 
   /* edit to 990 for future use */
 
@@ -17,6 +23,9 @@ export const NavbarContainer = styled.nav`
     padding: 0 20px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
   }
 
   .logo {
@@ -64,7 +73,7 @@ export const NavbarListContainer = styled.div`
   .navbar--list {
     display: flex;
     list-style: none;
-    gap: 36px;
+    gap: 45px;
     align-items: center;
     justify-content: space-between;
     cursor: pointer;

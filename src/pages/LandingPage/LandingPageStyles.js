@@ -12,7 +12,7 @@ export const HeaderContainer = styled.header`
   position: relative;
   transition: 0.3s ease-in-out;
   @media (max-width: 768px) {
-    padding: 3rem 1rem 5rem 1rem;
+    padding: 5rem 1rem 5rem 1rem;
     position: static;
     height: max-content;
   }
@@ -182,26 +182,25 @@ export const ServiceContainer = styled.section`
   justify-content: center;
   background: var(--white);
   margin-bottom: 50px;
-  padding: 0 1rem 50px  1rem;
+  padding: 0 1rem 50px 1rem;
   transition: 0.3s ease-in-out;
   @media (max-width: 768px) {
     padding: 50px 15px;
-    margin-top:50px;
-    
+    margin-top: 50px;
   }
 
   h2 {
     font-family: Inter;
-    font-size:36px;
+    font-size: 36px;
     text-align: center;
-    letter-spacing:0.2px;
-    line-height:1.5;
-    margin:16px 0 18px;
+    letter-spacing: 0.2px;
+    line-height: 1.5;
+    margin: 16px 0 18px;
     transition: all 1s ease 0s;
     @media (max-width: 768px) {
       width: 100%;
       margin-top: 1rem;
-      font-size:29px;
+      font-size: 29px;
     }
   }
 
@@ -222,22 +221,20 @@ export const ServiceContainer = styled.section`
       padding: 0;
       justify-content: left;
       align-items: flex-start;
-      margin:0 1rem;
+      margin: 0 1rem;
     }
 
     h4 {
       color: (--main);
       font-size: 16px;
-      letter-spacing:2px;
-      text-transform:uppercase;
-      font-family:inter;
-      transition:all 1s ease 0s;
-      
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-family: inter;
+      transition: all 1s ease 0s;
 
       @media (max-width: 768px) {
-     font-size: 14px;
-     
-    }
+        font-size: 14px;
+      }
     }
 
     /* h2 {
@@ -252,7 +249,6 @@ export const ServiceContainer = styled.section`
     align-items: center;
     justify-content: center;
     gap: 50px;
-    
 
     @media (max-width: 768px) {
       flex-direction: column;
@@ -267,39 +263,44 @@ export const ServiceContainer = styled.section`
     flex-direction: column;
     text-align: center;
     padding: 50px 30px;
-    margin:50px 0;
+    margin: 50px 0;
     /* gap: 6px; */
     border: 1px solid var(--main);
     border-radius: 16px;
     box-shadow: 5px 5px 16px -3px #2a1d6a;
     transition: all 1s ease 0s;
-    width:100% ;
+    width: 100%;
 
     @media (max-width: 768px) {
-      text-align:left;
-      align-items:flex-start;
+      text-align: left;
+      align-items: flex-start;
       /* padding:30px; */
     }
 
-    h3{
+    h3 {
       font-size: 24px;
-    font-family: 'Asul', sans-serif;
-    font-weight: 600;
-    letter-spacing: 0.2px;
-    margin: 30px 0px 8px;
+      font-family: 'Asul', sans-serif;
+      font-weight: 600;
+      letter-spacing: 0.2px;
+      margin: 30px 0px 8px;
     }
 
-    p{
+    p {
       line-height: 1.8;
       transition: all 1s ease 0s;
       font-family: Inter;
     }
-    
 
-    .service--logo{
-      border:1px solid var(--main)
-      border-radius:4px;
-      padding:0.4rem;
+    .service--logo {
+      border: 1px solid var(--main);
+      border-radius: 8px;
+      padding: 1rem;
+      background-color: var(--main);
+
+      .icon {
+        font-size: 30px;
+        color: white;
+      }
     }
   }
 `;
@@ -415,6 +416,14 @@ export const PricingContainer = styled.section`
           margin-bottom: 15px;
           font-size: 16px;
           font-family: inter;
+
+          svg {
+            border-radius: 50%;
+            color: var(--white);
+            background-color: #2a1d6a;
+            font-size: 13px;
+            margin-right: 5px;
+          }
         }
       }
 
