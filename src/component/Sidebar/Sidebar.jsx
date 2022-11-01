@@ -1,7 +1,5 @@
 import './Sidebar.css';
-import profile1 from '../../assets/avatar1.png';
-import profile2 from '../../assets/avatar2.png';
-import profile3 from '../../assets/avatar3.png';
+
 import RssFeedIcon from '@mui/icons-material/RssFeed';
 import ChatIcon from '@mui/icons-material/Chat';
 import PlayCircleIcon from '@mui/icons-material/PlayCircle';
@@ -57,37 +55,6 @@ const Sidebar = () => {
         <input type="button" value="Show More" className="Sidebar__btn" />
       </div>
       <hr className="Sidebarhr" />
-
-      <ul className="Sidebar--container--contact">
-        <h2 className="following--header">Who is following you</h2>
-        <li>
-          <div className="following--top">
-            <img src={profile1} alt="" />
-            <span>Jane Doe</span>
-          </div>
-          <div>
-            <button className="button fc-button">Follow</button>
-          </div>
-        </li>
-        <li>
-          <div className="following--top">
-            <img src={profile2} alt="" />
-            <span>Jane Doe</span>
-          </div>
-          <div>
-            <button className="button fc-button">Follow</button>
-          </div>
-        </li>
-        <li>
-          <div className="following--top">
-            <img src={profile3} alt="" />
-            <span>Jane Doe</span>
-          </div>
-          <div>
-            <button className="button fc-button">Follow</button>
-          </div>
-        </li>
-      </ul>
     </div>
   );
 };

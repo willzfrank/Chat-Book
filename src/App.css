@@ -12,6 +12,9 @@
   --black: #242d49;
   --white: #f7fbfe;
   --main: #2a1d6a;
+  --backdrop-filter: blur(15px);
+  --backdrop-filter-color: #eaf0fb;
+  --backdrop-background: hsla(0, 0%, 100%, 0.2);
 }
 
 ::-webkit-scrollbar {
@@ -36,7 +39,7 @@
 .App {
   overflow: hidden;
   color: var(--black);
-  padding: 1rem;
+  padding: 1rem 0;
 }
 /* 
 .blur {
