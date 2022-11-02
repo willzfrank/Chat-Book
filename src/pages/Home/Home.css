@@ -6,6 +6,9 @@
 .Home_top_center {
   flex: 5.5;
   padding: 20px;
+  /* testing */
+  overflow-x: auto;
+  overflow-y: auto;
 }
 
 .Home_top_left {
