@@ -87,7 +87,15 @@
 }
 
 .Home_top_left {
-  flex: 3.5;
+  flex: 3;
+  position: sticky;
+  top: 0px;
+  min-height: 100vh;
+  box-shadow: -3px 2px 5px 1px rgba(42,29,106,0.75);
+  -webkit-box-shadow: -3px 2px 5px 1px rgba(42,29,106,0.75);
+  -moz-box-shadow: -3px 2px 5px 1px rgba(42,29,106,0.75);
+  border-bottom-left-radius:10px;
+  border-top-left-radius:10px;
 }
 
 .Home_top_right {

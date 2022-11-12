@@ -19,6 +19,11 @@
   margin-right: 10px;
 }
 
+.feed--input--container:focus {
+  border: none !important;
+  outline: none !important;
+}
+
 .feed--input--container input {
   width: 80%;
   border: none;

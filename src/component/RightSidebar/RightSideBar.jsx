@@ -8,7 +8,7 @@ const RightSideBar = () => {
   return (
     <div className="RightSidebar--container">
       <ul className="Sidebar--container--contact">
-        <h2 className="following--header">Who is following you</h2>
+        <h2 className="following--header">Suggestions for you</h2>
         <li>
           <div className="following--top">
             <img src={profile1} alt="" />

@@ -1,3 +1,9 @@
 .RightSidebar--container {
-  padding: 20px 20px 0 0;
+  padding: 20px;
+  position: sticky;
+  top: 0px;
+  height: 100vh;
+  /* box-shadow: -3px 2px 5px 1px rgba(42,29,106,0.75);
+  -webkit-box-shadow: -3px 2px 5px 1px rgba(42,29,106,0.75);
+  -moz-box-shadow: -3px 2px 5px 1px rgba(42,29,106,0.75); */
 }

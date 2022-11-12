@@ -42,29 +42,8 @@
   overflow:clip;
   contain: paint;
   padding: 1rem 0;
-  /* background-color: black; */
-}
-/* 
-.blur {
-  position: absolute;
-  width: 22rem;
-  height: 14rem;
-  border-radius: 50%;
-  background: #2a1d6a;
-  filter: blur(160px);
-  border: 2px solid red;
-  z-index: 20;
 }
 
-.top {
-  top: -18%;
-  right: 0;
-}
-
-.bottom {
-  top: 55%;
-  left: -8rem;
-} */
 
 .button {
   display: flex;
