@@ -107,3 +107,9 @@
     display: none;
   }
 }
+
+@media (max-width: 429px){
+  .feed--container {
+    margin-top: 1rem;
+  }
+}
