@@ -27,14 +27,16 @@
 
 .feedhr {
   margin: 20px;
-  border: 1px solid var(--main);
+  border: 0.5px solid var(--main);
 }
 .feed--list--container ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex: wrap !important;
   margin-left: 20px;
   font-size: 15px;
+  
 }
 
 .feed--list--container ul li {
@@ -77,6 +79,7 @@
   border-radius: 0.5rem;
 }
 
+
 @media (max-width: 600px) {
   .feed--input--container input {
     width: 100%;
@@ -84,11 +87,19 @@
 
   .feed--list--container ul {
     justify-content: space-around;
-    margin-left: 0px;
     font-size: 12px;
   }
+
+  .feed--list--container ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+  }
+
+
   .feed--list--container ul li svg {
-    margin-right: 10px;
+    /* margin-right: 10px; */
     font-size: 25px;
   }
 

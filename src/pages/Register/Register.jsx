@@ -3,38 +3,40 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Register.css';
 import LeftArrow from '../../component/LeftArrow/LeftArrow';
+import { useFormik } from 'formik';
+import { basicSchema } from "../../schemas";
+import Bounce from 'react-reveal/Bounce';
 
 const Register = () => {
-  const [userInput, setUserInput] = useState({
-    username: '',
-    email: '',
-    password: '',
-    confirmpass: '',
-  });
-  const [confirmPass, setConfirmPass] = useState(false);
+  
 
-  const handleChange = (e) => {
-    setUserInput({ ...userInput, [e.target.name]: [e.target.value] });
+  const onSubmit = async (values, actions) => {
+    console.log(values);
+    console.log(actions);
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+    actions.resetForm();
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (userInput.confirmpass !== userInput.password) {
-      setConfirmPass(true);
-      setUserInput({
-        ...userInput,
-        password: '',
-        confirmpass: '',
-      });
-    }
-    setConfirmPass(false);
-    setUserInput({
+
+  const {
+    values,
+    errors,
+    touched,
+    isSubmitting,
+    handleBlur,
+    handleChange,
+    handleSubmit,}= useFormik({
+    initialValues:{
       username: '',
       email: '',
       password: '',
-      confirmpass: '',
-    });
-  };
+      confirmpassword: '',
+    },
+    validationSchema:basicSchema,
+    onSubmit,
+  });
+
+  console.log(errors);
   return (
     <div>
       <LeftArrow />
@@ -46,45 +48,97 @@ const Register = () => {
               Explore the ideas throughout the world.
             </h6>
           </div>
-          <form className="form--container" onSubmit={handleSubmit}>
+          <form autoComplete="off" onSubmit={handleSubmit} className="form--container" >
             <div className="form--box">
               <h2>Sign Up</h2>
               <input
                 type="text"
                 placeholder="Username"
-                className="login--input"
+                className={errors.username && touched.username ? "passwordincorrect" : ""}
+                style={{borderRadius:" 8px",
+                  border: "none",
+                  background:" rgb(236, 235, 235)",
+                  fontSize: "18px",
+                  padding: "20px",
+                  margin: "5px 0",
+                  outline: "none",
+                  width: "100%"}}
                 name="username"
-                value={userInput.username}
+                id='username'
+                value={values.username}
+                onBlur={handleBlur}
                 onChange={handleChange}
               />
+              <Bounce bottom cascade>
+              {errors.username && touched.username && <p className="error">{errors.username}</p>}
+              </Bounce>
+              
               <input
                 type="email"
                 placeholder="Email"
-                className="login--input"
+                className={errors.email && touched.email ? "passwordincorrect" : ""}
+                style={{borderRadius:" 8px",
+                  border: "none",
+                  background:" rgb(236, 235, 235)",
+                  fontSize: "18px",
+                  padding: "20px",
+                  margin: "5px 0",
+                  outline: "none",
+                  width: "100%"}}
                 name="email"
-                value={userInput.email}
+                id='email'
+                onBlur={handleBlur}
+                value={values.email}
                 onChange={handleChange}
               />
+               <Bounce bottom cascade>
+               {errors.email && touched.email && <p className="error">{errors.email}</p>}
+               </Bounce>
+              
               <input
                 type="password"
                 placeholder="Password"
-                className="login--input"
+                className={errors.password && touched.password ? "passwordincorrect" : ""}
+                style={{borderRadius:" 8px",
+                  border: "none",
+                  background:" rgb(236, 235, 235)",
+                  fontSize: "18px",
+                  padding: "20px",
+                  margin: "5px 0",
+                  outline: "none",
+                  width: "100%"}}
                 name="password"
-                value={userInput.password}
+                id='password'
+                value={values.password}
+                onBlur={handleBlur}
                 onChange={handleChange}
               />
+              <Bounce bottom cascade>
+              {errors.password && touched.password && <p className="error">{errors.password}</p>}
+              </Bounce>
+              
               <input
                 type="password"
                 placeholder="Confirm Password"
-                className="login--input"
-                name="confirmpass"
-                value={userInput.confirmpass}
+                className={errors.confirmpassword && touched.confirmpassword ? "passwordincorrect" : ""}
+                style={{borderRadius:" 8px",
+                  border: "none",
+                  background:" rgb(236, 235, 235)",
+                  fontSize: "18px",
+                  padding: "20px",
+                  margin: "5px 0",
+                  outline: "none",
+                  width: "100%"}}
+                name="confirmpassword"
+                id='confirmpassword'
+                value={values.confirmpassword}
+                onBlur={handleBlur}
                 onChange={handleChange}
               />
-              {confirmPass && (
-                <p className="passwordincorrect"> Password doesnt match</p>
-              )}
-
+              <Bounce bottom cascade>
+              {errors.confirmpassword && touched.confirmpassword && <p className="error">{errors.confirmpassword}</p>}
+              </Bounce>
+              
               <Link to={'/login'} className="login--link">
                 <p>Already have an account? Login.</p>
               </Link>

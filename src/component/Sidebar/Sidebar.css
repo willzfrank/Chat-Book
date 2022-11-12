@@ -1,6 +1,8 @@
 .Sidebar--container {
-  padding: 20px;
+  padding: 0px 20px;
   overflow-y: scroll;
+  /* position: sticky;
+  top:0; */
 }
 
 ::-webkit-scrollbar {
@@ -21,6 +23,16 @@
   align-items: center;
   margin-bottom: 20px;
 }
+
+.link--container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+
 
 .Sidebar--container--contact li {
   border-radius: 0.7rem;
@@ -48,6 +60,12 @@
   font-weight: 500;
 }
 
+.Sidebar__btn:hover{
+  background-color: var(--main);
+  color: var(--white);
+  transition: 1s;
+}
+
 .Sidebarhr {
   margin: 20px 0;
 }
@@ -73,12 +91,21 @@
   font-size: 13px;
 }
 
-.Sidebar--container--navigation li > svg {
+.Sidebar--container--navigation li > svg,
+.link--container > svg {
   margin-right: 0.5rem;
   cursor: pointer;
 }
 
 .Sidebar--container--navigation li {
   cursor: pointer;
-  width: max-content;
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  transition: 1s;
+}
+
+.Sidebar--container--navigation li:hover{
+ background-color: var(--main);
+ color: var(--white);
 }

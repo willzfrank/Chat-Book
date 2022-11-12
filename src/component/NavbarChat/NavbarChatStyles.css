@@ -1,4 +1,4 @@
-.topbarContainer {
+/* .topbarContainer {
   height: 50px;
   width: 100%;
   background: #fff;
@@ -14,11 +14,14 @@
   padding: 0 40px;
 }
 .logo {
+  font-family: Monsieur La Doulaise;
   font-size: 24px;
+  font-style: italic;
   margin-left: 20px;
   font-weight: bold;
-  color: rgb(49, 24, 39);
+  color:var(--main);
   cursor: pointer;
+  text-decoration: none;
 }
 .topbarCenter {
   flex: 5;
@@ -88,4 +91,137 @@
 .uil {
   border: 2px solid red;
   aspect-ratio: 1/1;
+} */
+
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    height: 50px;
+    border-bottom: 1px solid var(--main);
+    position: sticky;
+    width: 100%;
+    top: 0;
+    background-color: var(--white);
+    color:var(--main);
+    z-index: 999;
+}
+
+
+.left{
+  display: flex;
+  align-items: center;
+}
+
+.margin-30{
+  margin-right: 30px;
+}
+
+.margin-10{
+  margin-right: 10px;
+}
+
+.left span {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 25px;
+  color: var(--main);
+}
+
+.search{
+  display: flex;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+input:focus{
+  border-bottom: 1px solid black !important; 
+  border-radius: 0px;
+  
+}
+
+.search input {
+  border: none;
+  width: 500px;
+  background-color: transparent;
+  color: var(--main);
+  outline: none;
+}
+
+.right{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+svg{
+  cursor: pointer;
+}
+
+svg:hover{
+ color: black;
+ padding: 0.1rem;
+ border-radius: 50%;
+ transition: 0.5s;
+}
+
+.margin-20{
+  margin-right: 20px;
+}
+.right .user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+}
+
+.right .user img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* mobile */
+@media only screen and (max-width: 480px) and (min-width: 320px){
+  
+  .right{
+    display: none;
+  }
+
+.margin-30{
+  margin-right: 20px;
+}
+
+.margin-10{
+  margin-right: 5px;
+}
+
+.left span {
+  font-size: 30px;
+}
+
+.search{
+ width: 20%;
+}
+
+}
+
+/* Tablets */
+@media only screen and (max-width: 960px)and (min-width: 480px){
+.left{
+  width: 60%;
+}
+
+.right{
+  width: 40%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}  
 }

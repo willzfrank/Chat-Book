@@ -1,14 +1,89 @@
 .Home_container {
   display: flex;
   width: 100%;
-  margin-top: 1.2rem;
+  position: relative;
 }
+
+.icon--container{
+  position: sticky;
+  height: 50px;
+  bottom: 50px;
+  width: 40%;
+  margin-left: 30%;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon--container--account{
+  width: 40px !important;
+  height: 40px !important;
+    backdrop-filter: blur(10px);
+    background-color: var(--main);
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-size: 40px;
+    border-radius: 50%;
+    margin: auto;
+    padding: 5px;
+    position: relative;
+    border: 2px solid var(--main);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-self: center;
+}
+
+.icon--container--account::before{
+  content: '';
+  border: 2px solid var(--main);
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 0 12px var(--main);
+  transition: 0.3s;
+  animation: button 3s infinite;
+}
+
+@keyframes button {
+  0% {
+    box-shadow: 0 0 12px var(--main);
+  }
+  50% {
+    box-shadow: 0 0 24px var(--main);
+  }
+
+  100% {
+    box-shadow: 0 0 36px var(--main);
+  }
+}
+
+.icon--container--account:hover::before {
+  border: 2px solid #cacefe;
+  animation: buttonHover 3s infinite;
+  font-weight: bolder;
+  transition: 0.3s;
+}
+
+@keyframes buttonHover {
+  0% {
+    box-shadow: 0 0 12px #cacefe;
+  }
+  50% {
+    box-shadow: 0 0 24px #cacefe;
+  }
+}
+
+
 .Home_top_center {
   flex: 5.5;
-  padding: 20px;
+  padding: 0 20px;
   /* testing */
-  overflow-x: auto;
-  overflow-y: auto;
+  /* overflow-x: auto;
+  overflow-y: auto; */
 }
 
 .Home_top_left {
@@ -19,12 +94,26 @@
   flex: 3;
   height: calc(100vh - 50px);
   position: sticky;
-  top: 50px;
+  top: 0px;
+  min-height: 100vh;
+  border-bottom-right-radius:10px;
+  border-top-right-radius:10px;
+  padding-top: 10px;
+  box-shadow: 3px 1px 5px 0px rgba(42,29,106,1);
+  -webkit-box-shadow: 3px 1px 5px 0px rgba(42,29,106,1);
+  -moz-box-shadow: 3px 1px 5px 0px rgba(42,29,106,1);
   overflow-y: scroll;
   /* navbar is 50px */
 }
 
-@media (max-width: 768px) {
+.speedial{
+  position: sticky;
+  bottom: 0px;
+  right: 0;
+}
+
+
+@media (max-width: 885px) {
   .Home_top_right {
     display: none;
     flex: 0;
@@ -36,5 +125,29 @@
   .Home_top_center {
     flex: 1;
     width: 100%;
+  }
+
+  
+}
+
+@media only screen and (min-width: 768px){
+  .icon--container,
+  .icon--container--account,
+  .icon--container--account::before{
+    display: none !important;
+    position: static;
+  }
+
+  
+
+  .Home_container {
+    position: static;
+  }
+  
+}
+
+@media only screen and  (min-width: 1114px){
+  .speedial{
+    display: none;
   }
 }

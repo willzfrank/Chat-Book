@@ -16,7 +16,7 @@ function App() {
         <div className="blur top"></div>
         <div className="blur bottom"></div>
         <Routes>
-          <Route path="/" element={<LandingPage />} />
+          <Route exact path="/" element={<LandingPage />} />
           <Route path="/home" element={<Home />} />
           <Route path="/profile/:username" element={<Profile />} />
           <Route path="/login" element={<Login />} />

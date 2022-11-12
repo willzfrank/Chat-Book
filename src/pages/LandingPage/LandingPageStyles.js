@@ -17,6 +17,30 @@ export const HeaderContainer = styled.header`
     height: max-content;
   }
 
+  .custom-shape-divider-bottom-1667386572 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .custom-shape-divider-bottom-1667386572 svg {
+    position: relative;
+    display: block;
+    width: calc(106% + 1.3px);
+    height: 235px;
+  }
+
+  .custom-shape-divider-bottom-1667386572 .shape-fill {
+    fill: #2a1d6a;
+  }
   .image1 {
     position: absolute;
     top: 100px;
@@ -24,6 +48,9 @@ export const HeaderContainer = styled.header`
     @media (max-width: 768px) {
       display: none;
       position: static;
+    }
+    @media only screen and (max-width: 1024px) and (min-width: 769px) {
+      right: 200px;
     }
   }
 
@@ -36,6 +63,10 @@ export const HeaderContainer = styled.header`
     @media (max-width: 768px) {
       display: none;
       position: static;
+    }
+
+    @media only screen and (max-width: 1024px) and (min-width: 769px) {
+      right: 20px;
     }
   }
 
@@ -58,6 +89,10 @@ export const HeaderContainer = styled.header`
       display: none;
       position: static;
     }
+
+    @media only screen and (max-width: 1024px) and (min-width: 769px) {
+      left: 20px;
+    }
   }
 
   .image5 {
@@ -68,11 +103,15 @@ export const HeaderContainer = styled.header`
       display: none;
       position: static;
     }
+
+    @media only screen and (max-width: 1024px) and (min-width: 769px) {
+      left: 200px;
+    }
   }
 
   .header--content {
     width: 40%;
-    @media (max-width: 425px) {
+    @media (max-width: 768px) {
       width: 100%;
     }
   }
@@ -132,6 +171,7 @@ export const HeaderContainer = styled.header`
     .started--btn {
       background: #2a1d6a;
       color: white;
+      margin-right:15px;
       @media (max-width: 425px) {
         width: 100%;
       }
@@ -184,6 +224,7 @@ export const ServiceContainer = styled.section`
   margin-bottom: 50px;
   padding: 0 1rem 50px 1rem;
   transition: 0.3s ease-in-out;
+  
   @media (max-width: 768px) {
     padding: 50px 15px;
     margin-top: 50px;
@@ -215,6 +256,7 @@ export const ServiceContainer = styled.section`
     justify-content: center;
     flex-direction: column;
     color: (--black);
+    
 
     @media (max-width: 768px) {
       width: 100%;
@@ -249,6 +291,7 @@ export const ServiceContainer = styled.section`
     align-items: center;
     justify-content: center;
     gap: 50px;
+    
 
     @media (max-width: 768px) {
       flex-direction: column;
@@ -270,6 +313,7 @@ export const ServiceContainer = styled.section`
     box-shadow: 5px 5px 16px -3px #2a1d6a;
     transition: all 1s ease 0s;
     width: 100%;
+    margin-right:15px;
 
     @media (max-width: 768px) {
       text-align: left;
@@ -378,6 +422,7 @@ export const PricingContainer = styled.section`
       position: relative;
       transition: 0.3s;
       max-width: 320px;
+      margin-right:15px;
       @media (max-width: 768px) {
         height: calc(max-content + 20px);
         padding: 40px 30px;
@@ -395,7 +440,7 @@ export const PricingContainer = styled.section`
           position: absolute;
           width: calc(max-content + 2px);
           top: -30px;
-          right: -37px;
+          right: -30px;
           padding: 1px 3px;
           border: none;
           color: white;
@@ -544,7 +589,7 @@ export const StoreContainer = styled.div`
   box-shadow: 0 50px 40px -30px #2a1d6a;
 
   @media (max-width: 768px) {
-    max-width: 543px;
+    max-width: 100%;
     padding: 0 20px;
   }
 
@@ -589,7 +634,7 @@ export const StoreContainer = styled.div`
 
   .download--container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin: 1rem 0;
 
     .store--box {
@@ -622,7 +667,9 @@ export const FooterContainer = styled.footer`
   h3 {
     color: #2a1d6a;
     font-size: 30px;
+    font-weight: bold;
     font-family: Monsieur La Doulaise;
+    font-style: italic;
   }
 
   p {

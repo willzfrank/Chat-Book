@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: Inter;
   line-height: 1.7;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -37,9 +38,11 @@
 }
 
 .App {
-  overflow: hidden;
   color: var(--black);
+  overflow:clip;
+  contain: paint;
   padding: 1rem 0;
+  /* background-color: black; */
 }
 /* 
 .blur {
@@ -81,6 +84,8 @@
   border: 2px solid var(--main);
   font-weight: bold;
 }
+
+/* errors */
 
 @media (max-width: 768px) {
   .App {

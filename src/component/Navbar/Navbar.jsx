@@ -31,7 +31,7 @@ const Navbar = () => {
         <NavbarListContainer ref={navRef}>
           <ul className="navbar--list">
             <li>
-              <Link to="#services" className="link">
+              <Link to="#service" className="link">
                 Services
               </Link>
             </li>

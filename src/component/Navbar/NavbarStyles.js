@@ -15,6 +15,7 @@ export const NavbarContainer = styled.nav`
   /* border-bottom: 2px solid var(--main); */
   /* border-radius: 8px; */
   top: 0;
+  
 
   /* edit to 990 for future use */
 
@@ -59,12 +60,18 @@ export const NavbarContainer = styled.nav`
       width: 29px;
     }
   }
+
+  .nav-btn {
+    font-size: 30px;
+    color: var(--main);
+  }
 `;
 
 export const NavbarListContainer = styled.div`
   display: flex;
   justify-content: space-around;
   width: 75%;
+  
 
   @media only screen and (max-width: 990px) {
     display: none;
@@ -73,7 +80,8 @@ export const NavbarListContainer = styled.div`
   .navbar--list {
     display: flex;
     list-style: none;
-    gap: 45px;
+    gap: 45px !important;
+    width:20%;
     align-items: center;
     justify-content: space-between;
     cursor: pointer;

@@ -1,4 +1,13 @@
 .passwordincorrect {
-  border: 2px solid red;
-  color: red;
+  border: 2px solid  #fc8181 !important;
+  color: #fc8181;
+}
+
+.error {
+  color: #fc8181;
+  font-size: 0.75rem;
+  text-align: left;
+  margin-top: 0.25rem;
+  font-family: Inter;
+  font-weight: bold;
 }

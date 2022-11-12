@@ -24,7 +24,7 @@ const Feed = () => {
       <div className="feed--container">
         <div className="feed--input--container">
           <img src={photo} alt="" className="feed--profile" />
-          <input type="text" placeholder="What's on your mind?" />
+          <input type="text" placeholder="What's on your mind Willz?" />
         </div>
         <hr className="feedhr" />
         <div className="feed--list--container">
