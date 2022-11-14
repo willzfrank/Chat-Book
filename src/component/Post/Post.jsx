@@ -1,20 +1,32 @@
-import PostComponent from '../PostComponent/PostComponent';
-// import { useEffect, useState } from 'react';
-import './Post.css';
-// import { Axios } from 'axios';
+import PostComponent from "../PostComponent/PostComponent";
+import { useEffect, useState } from "react";
+import "./Post.css";
+import { axios } from "axios";
 
 const Post = () => {
-  // const [posts, setPosts] = useState([]);
+  const [post, setPost] = useState([]);
 
-  // useEffect(() => {
-  //   const fetchPosts = async () => {
-  //     const res = await Axios.get(`/api/posts/timeline/${userId}`);
-  //     setPosts(res.data);
-  //   };
-  //   fetchPosts();
-  // }, []);
+  useEffect(() => {
+    async function getPost() {
+      try {
+        const response = await axios.get("/api/posts/timeline/userid");
+        console.log(response.data);
+        const postRes = response.data;
+        setPost(postRes);
+      } catch (error) {
+        console.error(error);
+      }
+    }
+    getPost();
+  }, []);
 
-  return <PostComponent />;
+  return (
+    <>
+      {post.map((posts) => (
+        <PostComponent key={posts._id} post={posts} />
+      ))}
+    </>
+  );
 };
 
 export default Post;

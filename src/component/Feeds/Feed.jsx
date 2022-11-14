@@ -1,12 +1,13 @@
-import './Feed.css';
-import React, { useState, useRef } from 'react';
-import photo from '../../assets/avatar1.png';
-import Post from '../Post/Post';
-import EmojiEmotionsIcon from '@mui/icons-material/EmojiEmotions';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
-import LabelIcon from '@mui/icons-material/Label';
-import CollectionsIcon from '@mui/icons-material/Collections';
-import CloseIcon from '@mui/icons-material/Close';
+import "./Feed.css";
+import React, { useState, useRef, useEffect } from "react";
+import photo from "../../assets/avatar1.png";
+import Post from "../Post/Post";
+import EmojiEmotionsIcon from "@mui/icons-material/EmojiEmotions";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import LabelIcon from "@mui/icons-material/Label";
+import CollectionsIcon from "@mui/icons-material/Collections";
+import CloseIcon from "@mui/icons-material/Close";
+import axios from "axios";
 
 const Feed = () => {
   const [image, setImage] = useState(null);
@@ -19,6 +20,21 @@ const Feed = () => {
       });
     }
   };
+
+  useEffect(() => {
+    async function getUser() {
+      try {
+        const response = await axios.get(`/api/posts/timeline/${posts.userId}`);
+        console.log(response.data);
+        const userRes = response.data;
+        setUser(userRes);
+      } catch (error) {
+        console.error(error);
+      }
+    }
+    getUser();
+  }, [posts.userId]);
+
   return (
     <>
       <div className="feed--container">
@@ -30,17 +46,17 @@ const Feed = () => {
         <div className="feed--list--container">
           <ul>
             <li
-              style={{ color: 'green' }}
+              style={{ color: "green" }}
               onClick={() => imageRef.current.click()}
             >
               <CollectionsIcon />
               <span>Photo or Video</span>
             </li>
-            <li style={{ color: 'purple' }}>
+            <li style={{ color: "purple" }}>
               <LabelIcon />
               <span>Tag</span>
             </li>
-            <li style={{ color: 'brown' }}>
+            <li style={{ color: "brown" }}>
               <LocationOnIcon />
               <span>Location</span>
             </li>
@@ -51,7 +67,7 @@ const Feed = () => {
             <li>
               <input type="button" value="Share" className="feed-btn button" />
             </li>
-            <div style={{ display: 'none' }}>
+            <div style={{ display: "none" }}>
               <input
                 type="file"
                 name="myImage"

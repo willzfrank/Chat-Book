@@ -1,5 +1,5 @@
-const bcrypt = require('bcrypt');
-const User = require('../models/Users');
+const bcrypt = require("bcrypt");
+const User = require("../models/Users");
 
 // REGISTER
 
@@ -18,7 +18,7 @@ exports.Register = async (req, res) => {
     res.status(200).json(user);
   } catch (err) {
     console.log(err);
-    res.status(500).json(err + ' server error');
+    res.status(500).json(err + " server error detected");
   }
 };
 
@@ -27,13 +27,13 @@ exports.Register = async (req, res) => {
 exports.Login = async (req, res) => {
   try {
     const user = await User.findOne({ email: req.body.email });
-    !user && res.status(404).json('User not found');
+    !user && res.status(404).json("User not found");
 
     const validPassword = await bcrypt.compare(
       req.body.password,
       user.password
     );
-    !validPassword && res.status(404).json('Invalid Password');
+    !validPassword && res.status(404).json("Invalid Password");
 
     res.status(200).json(user);
   } catch (err) {
