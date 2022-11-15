@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   HeaderContainer,
   LandingPageContainer,
@@ -8,24 +8,24 @@ import {
   FaqBox,
   StoreContainer,
   FooterContainer,
-} from './LandingPageStyles.js';
-import image1 from '../../assets/heart.png';
-import image2 from '../../assets/like.png';
-import appStore from '../../assets/appstore.svg';
-import playStore from '../../assets/playstore.svg';
-import image3 from '../../assets/istockphoto-480613419-612x612.jpg';
-import image4 from '../../assets/gift.png';
-import image5 from '../../assets/36600502-thank-you-speech-bubble-drawing.jpg';
-import { Link } from 'react-router-dom';
-import ChevronRightSharpIcon from '@mui/icons-material/ChevronRightSharp';
-import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
-import SupportAgentIcon from '@mui/icons-material/SupportAgent';
-import HandymanIcon from '@mui/icons-material/Handyman';
-import DoneIcon from '@mui/icons-material/Done';
-import BusinessIcon from '@mui/icons-material/Business';
-import Navbar from '../../component/Navbar/Navbar.jsx';
-import Fade from 'react-reveal/Fade';
-import Pulse from 'react-reveal/Pulse';
+} from "./LandingPageStyles.js";
+import image1 from "../../assets/heart.png";
+import image2 from "../../assets/like.png";
+import appStore from "../../assets/appstore.svg";
+import playStore from "../../assets/playstore.svg";
+import image3 from "../../assets/istockphoto-480613419-612x612.jpg";
+import image4 from "../../assets/gift.png";
+import image5 from "../../assets/36600502-thank-you-speech-bubble-drawing.jpg";
+import { Link } from "react-router-dom";
+import ChevronRightSharpIcon from "@mui/icons-material/ChevronRightSharp";
+import RocketLaunchIcon from "@mui/icons-material/RocketLaunch";
+import SupportAgentIcon from "@mui/icons-material/SupportAgent";
+import HandymanIcon from "@mui/icons-material/Handyman";
+import DoneIcon from "@mui/icons-material/Done";
+import BusinessIcon from "@mui/icons-material/Business";
+import Navbar from "../../component/Navbar/Navbar.jsx";
+import Fade from "react-reveal/Fade";
+import Pulse from "react-reveal/Pulse";
 
 const LandingPage = () => {
   return (
@@ -62,8 +62,8 @@ const LandingPage = () => {
             Stay Cool !
             <span
               style={{
-                color: 'var(--black)',
-                fontFamily: 'Monsieur La Douloise',
+                color: "var(--black)",
+                fontFamily: "Monsieur La Douloise",
               }}
             >
               <br /> with
@@ -82,7 +82,7 @@ const LandingPage = () => {
               <Link to="/register" className="link">
                 Get Started
                 <ChevronRightSharpIcon
-                  style={{ display: 'none' }}
+                  style={{ display: "none" }}
                   className="right-arrow"
                 />
               </Link>
@@ -108,7 +108,7 @@ const LandingPage = () => {
         <div className="service--box" id="service">
           <Fade bottom>
             <h4>
-              Why Use <span style={{ color: 'var(--main)' }}>Hideas?</span>
+              Why Use <span style={{ color: "var(--main)" }}>Hideas?</span>
             </h4>
           </Fade>
           <Fade bottom>
@@ -128,7 +128,7 @@ const LandingPage = () => {
                 </Fade>
                 <Fade bottom>
                   <p>
-                    Hiideas offer premium customer support for every user 24/7
+                    Hideas offer premium customer support for every user 24/7
                     and free resources needed and please note that this is just
                     a fake site business for training purposes and just typing
                     to fill up this space here.
@@ -149,7 +149,7 @@ const LandingPage = () => {
                 </Fade>
                 <Fade bottom>
                   <p>
-                    Hiideas offer premium powerful tools for every user 24/7 and
+                    Hideas offer premium powerful tools for every user 24/7 and
                     free resources needed and please note that this is just a
                     fake site business for training purposes and just typing to
                     fill up this space here.
@@ -170,10 +170,10 @@ const LandingPage = () => {
                 </Fade>
                 <Fade bottom>
                   <p>
-                    Hiideas offer premium Enterprise-ready feature for every
-                    user 24/7 and free resources needed and please note that
-                    this is just a fake site business for training purposes and
-                    just typing to fill up this space here.
+                    Hideas offer premium Enterprise-ready feature for every user
+                    24/7 and free resources needed and please note that this is
+                    just a fake site business for training purposes and just
+                    typing to fill up this space here.
                   </p>
                 </Fade>
               </div>
@@ -341,7 +341,7 @@ const LandingPage = () => {
         </Fade>
 
         <div className="faq--circle">
-          {' '}
+          {" "}
           <svg
             className="abs-balls balls animate__animated animate__pulse animate__infinite"
             width="107"
@@ -386,7 +386,7 @@ const LandingPage = () => {
               </Fade>
               <Fade bottom>
                 <p>
-                  {' '}
+                  {" "}
                   mollitia impedit non dolor, corrupti veritatis omnis, modi hic
                   iure
                 </p>
@@ -400,7 +400,7 @@ const LandingPage = () => {
               </Fade>
               <Fade bottom>
                 <p>
-                  {' '}
+                  {" "}
                   ipsa nihil! Laborum incidunt assumenda rerum! Quia magnam
                   atque
                 </p>
@@ -443,6 +443,12 @@ const LandingPage = () => {
             <p className="store--subtitle tb-slid-up slide-up">
               Placing this text here to occupy space so it would not be placed
               as blank.
+              <br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ab
+              repudiandae, veritatis nulla explicabo,
+              <br />
+              adipisci reiciendis quaerat eum, at modi cumque praesentium vero
+              dicta nihil rerum assumenda ea ducimus omnis!
             </p>
           </Fade>
         </div>
@@ -461,7 +467,7 @@ const LandingPage = () => {
         </div>
       </StoreContainer>
       <FooterContainer>
-        <h3>HIIDEAS</h3>
+        <h3>HIDEAS</h3>
 
         <p>About</p>
         <p>Get in touch</p>

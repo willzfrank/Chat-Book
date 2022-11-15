@@ -63,7 +63,7 @@
 
 .followerStatus > hr {
   width: 85%;
-  border: 1px solid var(--main);
+  border: 0.5px solid var(--main);
 }
 
 .followerStatus > div {
@@ -91,14 +91,23 @@
 }
 
 .vl {
-  border: 2px solid var(--main);
+  border: 1px solid var(--main);
 
   width: 0.5rem;
   display: flex;
   flex-direction: column;
 }
 
-@media (max-width: 768px) {
+.message--btn {
+  padding: 5px 10px;
+  gap: 0.5rem;
+}
+
+.message--btn svg {
+  font-size: 1rem;
+}
+
+@media (max-width: 885px) {
   .profile--cover--img {
     object-fit: contain;
     height: 100%;
@@ -123,6 +132,7 @@
     margin-top: 200px;
     display: flex;
     flex-direction: column-reverse;
+    padding-left: 1rem;
   }
 
   .profile--right {
@@ -138,5 +148,12 @@
     border: 1px solid var(--main);
     height: 50px;
     width: 0rem;
+  }
+}
+
+@media only screen and (max-width: 900px) and (min-width: 768px) {
+  .followerStatus > hr {
+    width: 75%;
+    border: 0.5px solid var(--main);
   }
 }

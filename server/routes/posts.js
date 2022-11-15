@@ -3,7 +3,7 @@ const PostController = require("../controllers/PostController.js");
 
 // UPDATE or Edit A POST
 
-// router.put('./:id', async (req, res) => {
+// router.put('/:id', async (req, res) => {
 //   try {
 //     const post = Post.findById(req.params.id);
 

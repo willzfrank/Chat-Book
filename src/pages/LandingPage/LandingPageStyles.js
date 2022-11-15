@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const LandingPageContainer = styled.div``;
 export const HeaderContainer = styled.header`
@@ -122,7 +122,7 @@ export const HeaderContainer = styled.header`
     letter-spacing: -1.6px;
     color: #2a1d6a;
     font-weight: 800;
-    font-family: 'Asul', sans-serif;
+    font-family: "Asul", sans-serif;
     @media (max-width: 425px) {
       font-size: 36px;
       text-align: center;
@@ -171,7 +171,7 @@ export const HeaderContainer = styled.header`
     .started--btn {
       background: #2a1d6a;
       color: white;
-      margin-right:15px;
+      margin-right: 15px;
       @media (max-width: 425px) {
         width: 100%;
       }
@@ -224,7 +224,7 @@ export const ServiceContainer = styled.section`
   margin-bottom: 50px;
   padding: 0 1rem 50px 1rem;
   transition: 0.3s ease-in-out;
-  
+
   @media (max-width: 768px) {
     padding: 50px 15px;
     margin-top: 50px;
@@ -256,7 +256,6 @@ export const ServiceContainer = styled.section`
     justify-content: center;
     flex-direction: column;
     color: (--black);
-    
 
     @media (max-width: 768px) {
       width: 100%;
@@ -291,7 +290,6 @@ export const ServiceContainer = styled.section`
     align-items: center;
     justify-content: center;
     gap: 50px;
-    
 
     @media (max-width: 768px) {
       flex-direction: column;
@@ -313,7 +311,7 @@ export const ServiceContainer = styled.section`
     box-shadow: 5px 5px 16px -3px #2a1d6a;
     transition: all 1s ease 0s;
     width: 100%;
-    margin-right:15px;
+    margin-right: 15px;
 
     @media (max-width: 768px) {
       text-align: left;
@@ -323,7 +321,7 @@ export const ServiceContainer = styled.section`
 
     h3 {
       font-size: 24px;
-      font-family: 'Asul', sans-serif;
+      font-family: "Asul", sans-serif;
       font-weight: 600;
       letter-spacing: 0.2px;
       margin: 30px 0px 8px;
@@ -355,7 +353,7 @@ export const PricingContainer = styled.section`
   justify-content: center;
   background: #f7fbfe;
   padding: 100px 20px 120px 20px;
-  font-family: 'Inter';
+  font-family: "Inter";
   margin-bottom: 50px;
   transition: 0.3s ease-in-out;
   @media (max-width: 768px) {
@@ -422,7 +420,7 @@ export const PricingContainer = styled.section`
       position: relative;
       transition: 0.3s;
       max-width: 320px;
-      margin-right:15px;
+      margin-right: 15px;
       @media (max-width: 768px) {
         height: calc(max-content + 20px);
         padding: 40px 30px;
@@ -535,7 +533,7 @@ export const FAQContainer = styled.section`
     margin-bottom: 80px;
     font-size: 30px;
     color: var(--main);
-    font-family: 'Asul', sans-serif;
+    font-family: "Asul", sans-serif;
     transition: 1s ease;
     font-size: 48.4px;
     margin-block-start: 0.83em;
@@ -557,7 +555,7 @@ export const FaqBox = styled.div`
   transition: 1s ease;
 
   h2 {
-    font-family: 'Asul', sans-serif;
+    font-family: "Asul", sans-serif;
     font-weight: bold;
     line-height: 1.7;
     letter-spacing: -0.4px;
@@ -570,7 +568,7 @@ export const FaqBox = styled.div`
     transition: 1s ease;
     letter-spacing: -0.4px;
     font-size: 16px;
-    font-family: 'Inter';
+    font-family: "Inter";
     line-height: 1.7;
 
     @media (max-width: 768px) {
@@ -614,7 +612,7 @@ export const StoreContainer = styled.div`
     @media (max-width: 768px) {
       letter-spacing: 0;
       font-size: 250%;
-      font-family: 'Asul', sans-serif;
+      font-family: "Asul", sans-serif;
       transition: 1s ease;
       font-size: 36px;
     }
@@ -624,9 +622,8 @@ export const StoreContainer = styled.div`
     font-size: 105%;
     margin: 24px 0 30px 0;
     letter-spacing: -0.4px;
-    font-family: 'Inter';
+    font-family: "Inter";
     line-height: 1.7;
-
     @media (max-width: 768px) {
       max-width: 90%;
     }
@@ -636,6 +633,7 @@ export const StoreContainer = styled.div`
     display: flex;
     justify-content: space-evenly;
     margin: 1rem 0;
+    padding-bottom: 15px;
 
     .store--box {
       display: flex;
@@ -692,7 +690,7 @@ export const FooterContainer = styled.footer`
     font-size: 2rem;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: -3px 3px 15px #2a1d6a;
+    box-shadow: -3px 3px 15px rgba(0, 0, 0, 0.68);
     z-index: 31;
     visibility: hidden;
     opacity: 0;

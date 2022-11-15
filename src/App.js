@@ -1,13 +1,12 @@
-import './App.css';
-import Navbar from './component/NavbarChat/NavbarChat';
-import Home from './pages/Home/Home';
-import Login from './pages/Login/Login';
-import Profile from './pages/Profile/Profile.jsx';
-import Register from './pages/Register/Register.jsx';
-import LandingPage from './pages/LandingPage/LandingPage';
-import Error404 from './pages/404/404.jsx';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Chat from './pages/Chat/Chat';
+import "./App.css";
+import Home from "./pages/Home/Home";
+import Login from "./pages/Login/Login";
+import Profile from "./pages/Profile/Profile.jsx";
+import Register from "./pages/Register/Register.jsx";
+import LandingPage from "./pages/LandingPage/LandingPage";
+import Error404 from "./pages/404/404.jsx";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Chat from "./pages/Chat/Chat";
 
 function App() {
   return (

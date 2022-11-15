@@ -8,6 +8,12 @@
   top: 50px;
   overflow-y: scroll;
   height: calc(100vh - 50px);
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+  padding-top: 10px;
+  box-shadow: 3px 1px 5px 0px rgba(0, 0, 0, 0.68);
+  -webkit-box-shadow: 3px 1px 5px 0px rgba(0, 0, 0, 0.68);
+  -moz-box-shadow: 3px 1px 5px 0px rgba(0, 0, 0, 0.68);
 }
 
 @media (max-width: 600px) {

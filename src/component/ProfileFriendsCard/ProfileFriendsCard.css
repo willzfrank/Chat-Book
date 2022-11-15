@@ -5,6 +5,10 @@
   margin-bottom: 20px;
   cursor: pointer;
 }
+
+.card--list--container p {
+  font-size: 12px;
+}
 h2 {
   margin-bottom: 30px;
 }
@@ -32,6 +36,6 @@ h2 {
   }
 
   .card--list--box {
-    gap: 7px;
+    gap: 20px;
   }
 }

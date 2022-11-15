@@ -21,19 +21,19 @@ const Feed = () => {
     }
   };
 
-  useEffect(() => {
-    async function getUser() {
-      try {
-        const response = await axios.get(`/api/posts/timeline/${posts.userId}`);
-        console.log(response.data);
-        const userRes = response.data;
-        setUser(userRes);
-      } catch (error) {
-        console.error(error);
-      }
-    }
-    getUser();
-  }, [posts.userId]);
+  // useEffect(() => {
+  //   async function getUser() {
+  //     try {
+  //       const response = await axios.get(`/api/posts/timeline/${posts.userId}`);
+  //       console.log(response.data);
+  //       const userRes = response.data;
+  //       setUser(userRes);
+  //     } catch (error) {
+  //       console.error(error);
+  //     }
+  //   }
+  //   getUser();
+  // }, [posts.userId]);
 
   return (
     <>

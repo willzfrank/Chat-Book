@@ -1,10 +1,11 @@
-import React from 'react';
-import './ProfileCenter.css';
-import cover from '../../assets/home-img.png';
-import image1 from '../../assets/avatar1.png';
-import Feed from '../Feeds/Feed';
-import ProfileInfo from '../ProfileInfo/ProfileInfo';
-import ProfileFriendsCard from '../ProfileFriendsCard/ProfileFriendsCard';
+import React from "react";
+import "./ProfileCenter.css";
+import cover from "../../assets/home-img.png";
+import image1 from "../../assets/avatar1.png";
+import Feed from "../Feeds/Feed";
+import ProfileInfo from "../ProfileInfo/ProfileInfo";
+import ProfileFriendsCard from "../ProfileFriendsCard/ProfileFriendsCard";
+import ChatBubbleIcon from "@mui/icons-material/ChatBubble";
 
 const ProfileCenter = () => {
   return (
@@ -28,9 +29,14 @@ const ProfileCenter = () => {
                 <p>Followers</p>
               </div>
               <div className="vl"></div>
-              <div className="follow">
+              {/* <div className="follow">
                 <p>3</p>
                 <p>Posts</p>
+              </div> */}
+              <div>
+                <div className="message--btn button">
+                  <ChatBubbleIcon /> Message
+                </div>
               </div>
             </div>
             <hr />
