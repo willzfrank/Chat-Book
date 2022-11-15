@@ -1,5 +1,5 @@
-const router = require('express').Router();
-const PostController = require('../controllers/PostController.js');
+const router = require("express").Router();
+const PostController = require("../controllers/PostController.js");
 
 // UPDATE or Edit A POST
 
@@ -20,21 +20,21 @@ const PostController = require('../controllers/PostController.js');
 
 // CREATE A POST
 
-router.post('./', PostController.CreatePost);
+router.post("/", PostController.CreatePost);
 
 // DELETE A POST
 
-router.delete('./:id', PostController.Delete);
+router.delete("/:id", PostController.Delete);
 
 // LIKE  and DISLIKE A POST
 
-router.put('/:id/like', PostController.like_dislike);
+router.put("/:id/like", PostController.like_dislike);
 
 // GET A POST
 
-router.get('/:id', PostController.getPost);
+router.get("/:id", PostController.getPost);
 
 // GET TIMELINE POSTS
 
-router.get('/timeline/:userId', PostController.timeline_post);
+router.get("/timeline/:userId", PostController.timeline_post);
 module.exports = router;
